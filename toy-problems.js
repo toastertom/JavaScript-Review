@@ -7,8 +7,15 @@ Write a function that takes an array of integers and returns the sum of the inte
 plusOneSum([1, 2, 3, 4]); // 14
 
 */
+var plusOneSum =[1, 2, 3, 4]; // 14
 
+function arraySum(array) {
+  array.reduce(function (a,b) {
+     console.log(a + b);
+  }
 
+)}
+arraySum(plusOneSum);
 
 /*
 
