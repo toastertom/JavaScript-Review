@@ -10,12 +10,14 @@ plusOneSum([1, 2, 3, 4]); // 14
 var plusOneSum =[1, 2, 3, 4]; // 14
 
 function arraySum(array) {
-  array.reduce(function (a,b) {
-     console.log(a + b);
+  var total = 0;
+  for (var i = 0; i < array.length; i++) {
+    // += is an addition assignment. Both variables must have a number value hence ^^^^ "var total = 0" above. 
+     total += array[i] + 1;
   }
-
-)}
-arraySum(plusOneSum);
+return total ;
+}
+console.log(arraySum(plusOneSum));
 
 /*
 
