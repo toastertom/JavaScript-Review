@@ -7,17 +7,17 @@ Write a function that takes an array of integers and returns the sum of the inte
 plusOneSum([1, 2, 3, 4]); // 14
 
 */
-var plusOneSum =[1, 2, 3, 4]; // 14
-
-function arraySum(array) {
-  var total = 0;
-  for (var i = 0; i < array.length; i++) {
-    // += is an addition assignment. Both variables must have a number value hence ^^^^ "var total = 0" above. 
-     total += array[i] + 1;
-  }
-return total ;
-}
-console.log(arraySum(plusOneSum));
+// var plusOneSum =[1, 2, 3, 4]; // 14
+//
+// function arraySum(array) {
+//   var total = 0;
+//   for (var i = 0; i < array.length; i++) {
+//     // += is an addition assignment. Both variables must have a number value hence ^^^^ "var total = 0" above.
+//      total += array[i] + 1;
+//   }
+// return total ;
+// }
+// console.log(arraySum(plusOneSum));
 
 /*
 
@@ -26,7 +26,16 @@ Write a function that accepts a multi dimensional array and returns a flattened 
 flatten([1, 2, [3, [4], 5, 6], 7]) // [1, 2, 3, 4, 5, 6, 7]
 
 */
-
+// var array = [1, 2, [3, [4], 5, 6], 7];
+//
+// function flattenArr(array) {
+//  var myNewArray = [].concat.apply([], array); //[ 1, 2, 3, [ 4 ], 5, 6, 7 ] Darn still has "[4]"
+//  //This below should fix it.
+//  var myNewNewArray = [].concat.apply([], myNewArray) //[ 1, 2, 3, 4, 5, 6, 7 ]. It works!
+//
+//   return myNewNewArray;
+// }
+// console.log(flattenArr(array));
 
 
 /*
